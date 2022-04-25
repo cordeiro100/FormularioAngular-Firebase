@@ -1,0 +1,65 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border: 3px solid;
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    position: absolute;
+    left: 290px;
+    top: 350px;
+    animation: colors 22s ease infinite;
+    background-color: black;
+    opacity: 0.7;
+    border-style: groove;
+  }
+  
+  .formulario input {
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 0px solid;
+    padding: 10px;
+    border-bottom: rgb(182, 0, 0);
+    border-style: groove;
+    margin-left: 20px;
+   
+  }
+  
+  .formulario label {
+    margin-top: 20px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario button {
+    width: 130px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 0px solid;
+    border-bottom: #a50404;
+    border-style: groove;
+    color: #a50404;
+    font-family: "Bebas Neue", cursive;
+    padding: 9px;
+    width: 130px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 0px solid;
+    border-bottom: #a50404;
+    border-style: groove;
+    color: #a50404;
+    font-family: "Bebas Neue", cursive;
+    padding: 9px;
+  }
+  
+  .formulario button:hover {
+    filter: brightness(0.8);
+  }

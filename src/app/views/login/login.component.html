@@ -1,0 +1,26 @@
+<div class="background">
+
+<div class="formulario">
+<form #userForm="ngForm" [formGroup]="loginForm" (ngSubmit)="logar()" >
+
+            
+    <label for="email">Digite seu email</label>
+    <input type="email"id="email"name="email"placeholder="email@email.com" formControlName="email"[(ngModel)]="loginModel.email"><br>
+    <small *ngIf="loginForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+        Um email é necessário!!
+      </small>
+    
+
+
+    <label for="password">Digite sua senha</label>
+<input type="password"id="password"name="password"placeholder="Sua senha..." formControlName="password"[(ngModel)]="loginModel.password"><br>
+<small *ngIf="loginForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+    Uma senha é necessária!!
+  </small>
+    
+<br>
+   <button  id="botao-login "type="submit" [disabled]="!loginForm.valid">Logar</button>
+
+  </form>
+</div>
+</div>
