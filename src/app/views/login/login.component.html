@@ -18,8 +18,12 @@
     Uma senha é necessária!!
   </small>
     
-<br>
-   <button  id="botao-login "type="submit" [disabled]="!loginForm.valid">Logar</button>
+
+   <button id="botao-login "type="submit" [disabled]="!loginForm.valid">Logar</button>
+  <div class="link-cadastro">
+    <p>Novo por aqui?</p>
+    <a routerLink="cadastro">Crie a sua conta</a>
+  </div>
 
   </form>
 </div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cordeiroangular": {
+      "hosting": {
+        "formulario": [
+          "cordeiroangular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cordeiroangular"
+  }
+}

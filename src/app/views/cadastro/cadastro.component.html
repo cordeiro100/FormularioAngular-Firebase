@@ -1,0 +1,42 @@
+<div class="background">
+
+  <div class="formulario">
+  <form #userForm="ngForm" [formGroup]="registerForm" (ngSubmit)="registrar()">
+  
+      <label for="nome">Digite seu primeiro nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" formControlName="nome" [(ngModel)]="userModel.nome">
+      <small *ngIf="registerForm.get('nome')?.errors?.['required']" class="text-danger d-block mt-2">
+        Seu nome é necessário
+      </small>
+
+      <label for="sobrenome">Digite seu sobrenome</label>
+      <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu último nome" formControlName="sobrenome" [(ngModel)]="userModel.sobrenome">
+      <small *ngIf="registerForm.get('sobrenome')?.errors?.['required']" class="text-danger d-block mt-2">
+        Seu sobrenome é necessário
+      </small>
+
+              
+      <label for="email">Digite um email válido</label>
+      <input type="email"id="email"name="email"placeholder="email@email.com" formControlName="email" [(ngModel)]="userModel.email"><br>
+      <small *ngIf="registerForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+        Um email é necessário
+      </small>
+   
+      <label for="password">Digite sua senha</label>
+      <input type="password"id="password"name="password"placeholder="Mínimo de 6 caracteres" formControlName="password" [(ngModel)]="userModel.password"><br>
+      <small *ngIf="registerForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+        Uma senha é necessária
+      </small>
+
+
+      
+  
+     <button id="botao-login "type="submit" [disabled]="!registerForm.valid">Registrar</button>
+     <div class="link-cadastro">
+      <p>Já é um veterano?</p>
+      <a routerLink="/">Faça Login</a>
+    </div>
+  
+    </form>
+  </div>
+  </div>

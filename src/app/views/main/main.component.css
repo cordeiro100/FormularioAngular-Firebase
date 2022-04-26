@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+.background {
+  background-image: url("src/assets/background1.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 140px;
+  color: rgb(255, 0, 0);
+  font-family: "Goldman", cursive;
+  opacity: 0.5;
+}

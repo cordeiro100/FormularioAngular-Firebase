@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "formulario:build:production",
+            "firebaseProject": "cordeiroangular",
+            "firebaseHostingSite": "cordeiroangular"
+          }
         }
       }
     }
